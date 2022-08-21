@@ -1,0 +1,34 @@
+### test POST create
+POST http://localhost:8080/api/test
+Content-Type: application/json
+
+{
+  "title": "test title",
+  "description": "test desrc",
+  "published": true
+}
+
+### test GET all
+GET http://localhost:8080/api/test
+
+### test GET by id
+GET http://localhost:8080/api/test/1
+
+### test GET find by published
+GET http://localhost:8080/api/test/published
+
+### test PUT update
+PUT http://localhost:8080/api/test/1
+Content-Type: application/json
+
+{
+  "title": "test title 1",
+  "description": "test desrc 1",
+  "published": true
+}
+
+### test DELETE by id
+DELETE http://localhost:8080/api/test/1
+
+### test DELETE all
+DELETE http://localhost:8080/api/test
